@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestSwipe</string>
+    <string name="action_setting">Setting</string>
+    <string name="mill_text"></string>
+    <string name="title_activity_detail">Detail</string>
+
+</resources>
