@@ -32,9 +32,31 @@ public class MillStoreDB extends SQLiteOpenHelper {
                 MillStoreContracts.CategoryEntry.COLUMN_CREATED_BY + " TEXT NOT NULL, " +
                 MillStoreContracts.CategoryEntry.COLUMN_UPDATED_BY + " TEXT NOT NULL, " +
                 MillStoreContracts.CategoryEntry.COLUMN_PARENT_CATEGORY + " TEXT NOT NULL, " +
-                MillStoreContracts.CategoryEntry.COLUMN_IMAGE + " BLOB NOT NULL " +
+                MillStoreContracts.CategoryEntry.COLUMN_TAB_CATEGORY + " TEXT NOT NULL, " +
+                MillStoreContracts.CategoryEntry.COLUMN_FULLFILLMENT_GROUP  + " TEXT NOT NULL, " +
+                MillStoreContracts.CategoryEntry.COLUMN_IMAGE + " BLOB NOT NULL, " +
+                MillStoreContracts.CategoryEntry.COLUMN_ICON + " BLOB NOT NULL " +
                 " );";
 
+        final String SQL_CREATE_MILLSTORE_LOCATION_TABLE = "CREATE TABLE " + MillStoreContracts.LocationEntry.TABLE_NAME + " (" +
+                MillStoreContracts.LocationEntry._ID + " INTEGER PRIMARY KEY," +
+                MillStoreContracts.LocationEntry.COLUMN_CITY + " TEXT NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_DISTRICT + " TEXT NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_STATE + " TEXT NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_COUNTRY + " TEXT NOT NULL, " +
+                MillStoreContracts.CategoryEntry.COLUMN_CREATED_BY + " TEXT NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_UPDATED_BY + " TEXT NOT NULL, " +
+            
+                MillStoreContracts.LocationEntry.COLUMN_ACTIVE + " INTEGER NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_CREATED + " INTEGER NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_UPDATED + " INTEGER NOT NULL, " +
+               
+                MillStoreContracts.LocationEntry.COLUMN_STREET + " TEXT NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_ADDRESS1 + " TEXT NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_ADDRESS2  + " TEXT NOT NULL, " +
+                MillStoreContracts.LocationEntry.COLUMN_ZIP_CODE + " TEXT NOT NULL " +
+                " );";
+        
         final String SQL_CREATE_MILLSTORE_TABLE = "CREATE TABLE " + MillStoreContracts.ItemEntry.TABLE_NAME + " (" +
                 // Why AutoIncrement here, and not above?
                 // Unique keys will be auto-generated in either case.  But for weather
@@ -43,7 +65,7 @@ public class MillStoreDB extends SQLiteOpenHelper {
                 // should be sorted accordingly.
                 MillStoreContracts.ItemEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
 
-                // the ID of the location entry associated with this weather data
+                
                 MillStoreContracts.ItemEntry.COLUMN_ITEM_NAME + " TEXT NOT NULL, " +
                 MillStoreContracts.ItemEntry.COLUMN_DESCRIPTION + " TEXT NOT NULL, " +
                 MillStoreContracts.ItemEntry.COLUMN_SHORT_DESCRIPTION + " TEXT NOT NULL, " +
@@ -51,20 +73,21 @@ public class MillStoreDB extends SQLiteOpenHelper {
                 MillStoreContracts.ItemEntry.COLUMN_VENDOR + " TEXT NOT NULL, " +
                 MillStoreContracts.ItemEntry.COLUMN_FULLFILLMENT_GROUP + " TEXT NOT NULL, " +
                 MillStoreContracts.ItemEntry.COLUMN_UPDATED_BY + " TEXT NOT NULL, " +
-                MillStoreContracts.ItemEntry.COLUMN_CART + " TEXT NOT NULL, " +
+//               MillStoreContracts.ItemEntry.COLUMN_CART + " TEXT NOT NULL, " +
+//               MillStoreContracts.ItemEntry.COLUMN_SHOW_QUANTITY + " INTEGER NOT NULL, " +
+//               MillStoreContracts.ItemEntry.COLUMN_QUANTITY + " INTEGER NOT NULL, " +
 
                 MillStoreContracts.ItemEntry.COLUMN_ACTIVE + " INTEGER NOT NULL, " +
                 MillStoreContracts.ItemEntry.COLUMN_AVAILABILTY + " INTEGER NOT NULL, " +
-                MillStoreContracts.ItemEntry.COLUMN_SHOW_QUANTITY + " INTEGER NOT NULL, " +
-
                 MillStoreContracts.ItemEntry.COLUMN_CREATED + " INTEGER NOT NULL, " +
                 MillStoreContracts.ItemEntry.COLUMN_UPDATED + " INTEGER NOT NULL, " +
 
+                MillStoreContracts.ItemEntry.COLUMN_ICON + " BLOB NOT NULL, " +
                 MillStoreContracts.ItemEntry.COLUMN_IMAGE + " BLOB NOT NULL, " +
-
-                MillStoreContracts.ItemEntry.COLUMN_QUANTITY + " INTEGER NOT NULL, " +
                 MillStoreContracts.ItemEntry.COLUMN_COST + " REAL NOT NULL," +
-                MillStoreContracts.ItemEntry.COLUMN_CATEGORY + " REAL NOT NULL," +
+            
+                // the ID of the category entry associated with this weather data
+                MillStoreContracts.ItemEntry.COLUMN_CATEGORY + " INTEGER NOT NULL," +
 
                 " FOREIGN KEY (" + MillStoreContracts.ItemEntry.COLUMN_CATEGORY + ") REFERENCES " +
                 MillStoreContracts.CategoryEntry.TABLE_NAME + " (" + MillStoreContracts.CategoryEntry._ID + ")); ";
