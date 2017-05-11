@@ -85,17 +85,19 @@ public class MillStoreContracts {
         
         public static final String COLUMN_ACTIVE = "active";
 
-        public static final String COLUMN_ITEM_NAME = "cart_name";
+        public static final String COLUMN_CART_NAME = "cart_name";
 
         public static final String COLUMN_USER = "user";
 
         public static final String COLUMN_ADDRESS = "delivery_address";
 
-        public static final String COLUMN_TOTAL_ITEM = "total_item";
+        public static final String COLUMN_ITEM_QUANTITY = "item_quantity";
 
-        public static final String COLUMN_TOTAL_COST = "total_cost";
+        public static final String COLUMN_ITEM_COST = "item_cost";
          
         public static final String COLUMN_CART_ITEM = "cart_item";
+        
+        public static final String COLUMN_CREATED = "created";
         
     }
     
@@ -105,7 +107,7 @@ public class MillStoreContracts {
         
         public static final String COLUMN_ACTIVE = "active";
 
-        public static final String COLUMN_Item = "item";
+        public static final String COLUMN_ITEM = "item";
 
         public static final String COLUMN_QUANTITY = "quantity";
         
@@ -114,6 +116,8 @@ public class MillStoreContracts {
         public static final String COLUMN_ORDER_NO = "order_no";
          
         public static final String COLUMN_DATE_PLACED = "date_placed";
+        
+        public static final String COLUMN_CART_NAME = "cart";
         
     }
     
@@ -192,6 +196,8 @@ public class MillStoreContracts {
         public static final String TABLE_NAME = "mill_ritm";
         
         public static final String COLUMN_ACTIVE = "active";
+        
+        public static final String COLUMN_REQUEST = "request";
         
         public static final String COLUMN_ASSIGNED_TO = "assigned_to";
         
