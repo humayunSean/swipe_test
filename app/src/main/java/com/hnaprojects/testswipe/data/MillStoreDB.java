@@ -1,4 +1,4 @@
-package com.hanprojects.testswipe.data;
+package com.hnaprojects.testswipe.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -35,7 +35,7 @@ public class MillStoreDB extends SQLiteOpenHelper {
                 MillStoreContracts.CategoryEntry.COLUMN_TAB_CATEGORY + " TEXT NOT NULL, " +
                 MillStoreContracts.CategoryEntry.COLUMN_FULLFILLMENT_GROUP  + " TEXT NOT NULL, " +
                 MillStoreContracts.CategoryEntry.COLUMN_IMAGE + " BLOB NOT NULL, " +
-                MillStoreContracts.CategoryEntry.COLUMN_ICON + " BLOB NOT NULL " +
+                MillStoreContracts.CategoryEntry.COLUMN_ICON + " TEXT NOT NULL" +
                 " );";
         
        
@@ -153,7 +153,7 @@ public class MillStoreDB extends SQLiteOpenHelper {
                 MillStoreContracts.CartItemEntry.TABLE_NAME + " (" + MillStoreContracts.CartItemEntry._ID + ")); ";
 
         db.execSQL(SQL_CREATE_MILLSTORE_CATEGORY_TABLE);
-        db.execSQL(SQL_CREATE_MILLSTORE_TABLE);
+        db.execSQL(SQL_CREATE_MILLSTORE_ITEM_TABLE);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.hanprojects.testswipe.data;
+package com.hnaprojects.testswipe.data;
 
 import android.provider.BaseColumns;
 

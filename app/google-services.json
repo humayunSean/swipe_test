@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "487062313352",
+    "firebase_url": "https://testswipe-a0927.firebaseio.com",
+    "project_id": "testswipe-a0927",
+    "storage_bucket": "testswipe-a0927.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487062313352:android:58a595eea90e852f",
+        "android_client_info": {
+          "package_name": "com.hnaprojects.testswipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487062313352-ruvmt9bamu787v7tt0rbc9gbs5v6t9v6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hnaprojects.testswipe",
+            "certificate_hash": "377e754aabb499d6f9d466efae47c13ac5343e40"
+          }
+        },
+        {
+          "client_id": "487062313352-d5hehne3pa0s639p5thvntid0rugdv8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9i74bEOf6uBWJgiYlk8D4k9S5xQVR2Zc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487062313352-d5hehne3pa0s639p5thvntid0rugdv8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

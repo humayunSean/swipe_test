@@ -11,21 +11,12 @@ tools:context=".DetailActivity$DetailFragment">
     android:layout_height="wrap_content" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_below="@+id/detail_text"
-        android:layout_marginLeft="57dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="91dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:id="@+id/imageView" />
-
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/tab12">
-        <TableRow>
-        </TableRow>
-    </TableLayout>
 
 
     <LinearLayout android:layout_width="fill_parent"
@@ -52,7 +43,23 @@ tools:context=".DetailActivity$DetailFragment">
             android:id="@+id/button2" />
     </LinearLayout>
 
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab12"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp">
+        <TableRow>
+        </TableRow>
+    </TableLayout>
 
-
-
+    <ImageView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_weight="0.67"
+        android:visibility="invisible"/>
 </RelativeLayout>

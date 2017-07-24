@@ -1,4 +1,4 @@
-package com.hanprojects.testswipe.data;
+package com.hnaprojects.testswipe.data;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,22 +6,19 @@ import android.database.ContentObserver;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.DrawableWrapper;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.HandlerThread;
 
-import com.hanprojects.testswipe.R;
+import com.hnaprojects.testswipe.R;
 
-import java.io.ByteArrayOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
-import static com.hanprojects.testswipe.DetailActivity.DetailFragment.getBitmapAsByteArray;
+import static com.hnaprojects.testswipe.DetailFragment.getBitmapAsByteArray;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
@@ -109,7 +106,7 @@ public class TestUtilities {
 
         testValues.put(MillStoreContracts.CategoryEntry.COLUMN_UPDATED_BY, "Humayun");
         testValues.put(MillStoreContracts.CategoryEntry.COLUMN_PARENT_CATEGORY, "Humayun");
-        testValues.put(MillStoreContracts.CategoryEntry.COLUMN_IMAGE, data1);
+    //    testValues.put(MillStoreContracts.CategoryEntry.COLUMN_IMAGE, data1);
         return testValues;
     }
 

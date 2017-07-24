@@ -1,4 +1,4 @@
-package com.hanprojects.testswipe;
+package com.hnaprojects.testswipe;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;

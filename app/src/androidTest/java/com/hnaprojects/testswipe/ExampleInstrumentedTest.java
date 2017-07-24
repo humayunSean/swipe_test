@@ -1,4 +1,4 @@
-package com.hanprojects.testswipe;
+package com.hnaprojects.testswipe;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

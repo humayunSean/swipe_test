@@ -1,4 +1,4 @@
-package com.hanprojects.testswipe;
+package com.hnaprojects.testswipe;
 
 /**
  * Created by humayun on 2/12/2017.

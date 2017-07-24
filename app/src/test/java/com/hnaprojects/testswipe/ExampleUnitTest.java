@@ -1,4 +1,4 @@
-package com.hanprojects.testswipe;
+package com.hnaprojects.testswipe;
 
 import org.junit.Test;
 

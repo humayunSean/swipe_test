@@ -8,7 +8,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context="com.hanprojects.testswipe.MainActivity">
+tools:context="com.hnaprojects.testswipe.MainActivity">
 
 <android.support.design.widget.TabLayout
     android:id="@+id/tab_layout"
@@ -37,6 +37,6 @@ tools:context="com.hanprojects.testswipe.MainActivity">
         <!--android:paddingTop="4dp"-->
         <!--android:paddingBottom="4dp" />-->
 
-    </android.support.v4.view.ViewPager>>
+    </android.support.v4.view.ViewPager>
 
 </RelativeLayout>

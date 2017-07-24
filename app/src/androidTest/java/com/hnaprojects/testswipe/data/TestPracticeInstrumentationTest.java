@@ -1,11 +1,8 @@
-package com.hanprojects.testswipe.data;
+package com.hnaprojects.testswipe.data;
 
-import android.support.test.filters.LargeTest;
 import android.support.test.filters.SmallTest;
-import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

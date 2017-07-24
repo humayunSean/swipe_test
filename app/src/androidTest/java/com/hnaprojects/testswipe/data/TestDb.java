@@ -1,4 +1,4 @@
-package com.hanprojects.testswipe.data;
+package com.hnaprojects.testswipe.data;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -92,7 +92,7 @@ public class TestDb {
         locationColumnHashSet.add(MillStoreContracts.CategoryEntry.COLUMN_CREATED);
         locationColumnHashSet.add(MillStoreContracts.CategoryEntry.COLUMN_CREATED_BY);
         locationColumnHashSet.add(MillStoreContracts.CategoryEntry.COLUMN_DESCRIPTION);
-        locationColumnHashSet.add(MillStoreContracts.CategoryEntry.COLUMN_IMAGE);
+   //     locationColumnHashSet.add(MillStoreContracts.CategoryEntry.COLUMN_IMAGE);
         locationColumnHashSet.add(MillStoreContracts.CategoryEntry.COLUMN_ITEM_NAME);
         locationColumnHashSet.add(MillStoreContracts.CategoryEntry.COLUMN_PARENT_CATEGORY);
         locationColumnHashSet.add(MillStoreContracts.CategoryEntry.COLUMN_SHORT_DESCRIPTION);
